@@ -53,8 +53,8 @@ Open terminal and execute following commands:
 James Finnie-Ansley for their work on qChecker.
 
 Team members
-1. Jack Kleinsman - Leader, Project Manager
-1. Jonathan Song - Product Manager
-1. Luke McBride - Development Engineer
-1. Simon Shan - Development Engineer
-1. Geroge Qi - Development Engineer
+* Jack Kleinsman - Leader, Project Manager
+*  Jonathan Song - Product Manager
+*  Luke McBride - Development Engineer
+*  Simon Shan - Development Engineer
+*  Geroge Shengyu Qi - Development Engineer
