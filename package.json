@@ -1,0 +1,153 @@
+{
+  "name": "pydeodoriser",
+  "description": "Python language extension for code smell",
+  "author": "Team 27 | COMPSCI 399 | Semester One | University of Auckland",
+  "repository": "https://github.com/uoa-compsci399-s1-2022/project-17/",
+  "license": "Apache-2.0",
+  "version": "0.11.3",
+  "publisher": "openlawlibrary",
+  "engines": {
+    "vscode": "^1.62.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "type": "object",
+      "title": "pyDeodoriser",
+      "properties": {
+        "pyDeodoriser.substructures": {
+          "type": "object",
+          "description": "Toggle the detection of different patterns.",
+          "properties": {
+            "Unnecessary Elif": {
+              "type": "boolean"
+            },
+            "If/Else Return Bool": {
+              "type": "boolean"
+            },
+            "If Return Bool": {
+              "type": "boolean"
+            },
+            "If/Else Assign Bool Return": {
+              "type": "boolean"
+            },
+            "If/Else Assign Return": {
+              "type": "boolean"
+            },
+            "If/Else Assign Bool": {
+              "type": "boolean"
+            },
+            "Empty If Body": {
+              "type": "boolean"
+            },
+            "Empty Else Body": {
+              "type": "boolean"
+            },
+            "Nested If": {
+              "type": "boolean"
+            },
+            "Unnecessary Else": {
+              "type": "boolean"
+            },
+            "Duplicate If/Else Statement": {
+              "type": "boolean"
+            },
+            "Several Duplicate If/Else Statements": {
+              "type": "boolean"
+            },
+            "Duplicate If/Else Body": {
+              "type": "boolean"
+            },
+            "Augmentable Assignment": {
+              "type": "boolean"
+            },
+            "Duplicate Expression": {
+              "type": "boolean"
+            },
+            "Missed Absolute Value": {
+              "type": "boolean"
+            },
+            "Repeated Addition": {
+              "type": "boolean"
+            },
+            "Repeated Multiplication": {
+              "type": "boolean"
+            },
+            "Redundant Arithmetic": {
+              "type": "boolean"
+            },
+            "Redundant Not": {
+              "type": "boolean"
+            },
+            "Redundant Comparison": {
+              "type": "boolean"
+            },
+            "Mergeable Equal": {
+              "type": "boolean"
+            },
+            "Redundant For": {
+              "type": "boolean"
+            },
+            "Confusing Else": {
+              "type": "boolean"
+            },
+            "Else If": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "default": {
+            "Unnecessary Elif": true,
+            "If/Else Return Bool": true,
+            "If Return Bool": true,
+            "If/Else Assign Bool Return": true,
+            "If/Else Assign Return": true,
+            "If/Else Assign Bool": true,
+            "Empty If Body": true,
+            "Empty Else Body": true,
+            "Nested If": true,
+            "Unnecessary Else": true,
+            "Duplicate If/Else Statement": true,
+            "Several Duplicate If/Else Statements": true,
+            "Duplicate If/Else Body": true,
+            "Augmentable Assignment": true,
+            "Duplicate Expression": true,
+            "Missed Absolute Value": true,
+            "Repeated Addition": true,
+            "Repeated Multiplication": true,
+            "Redundant Arithmetic": true,
+            "Redundant Not": true,
+            "Redundant Comparison": true,
+            "Mergeable Equal": true,
+            "Redundant For": true,
+            "Confusing Else": true,
+            "Else If": true
+          }
+        }
+      }
+    }
+  },
+  "main": "./client/out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/vscode": "^1.62.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.2.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^7.0.0"
+  }
+}
