@@ -51,3 +51,10 @@ Open terminal and execute following commands:
 ## Acknowledgements
 
 James Finnie-Ansley for their work on qChecker.
+
+Team members
+1. Jack Kleinsman - Leader, Project Manager
+1. Jonathan Song - Product Manager
+1. Luke McBride - Development Engineer
+1. Simon Shan - Development Engineer
+1. Geroge Qi - Development Engineer
